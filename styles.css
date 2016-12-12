@@ -1,0 +1,134 @@
+/*BEGIN LANDSCAPE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor:none;
+}
+
+html, body {
+  height: 100vh;
+  max-height:100vh;
+  background: #593c1e;
+  overflow:hidden;
+}
+
+.landscape {
+  position: relative;
+  height: calc(100vh);
+  background: #db9;
+  overflow: hidden;
+}
+.landscape div {
+  position: absolute;
+}
+.sun {
+  left: 50%;
+  bottom: 180px;
+  width: 150px;
+  height: 150px;
+  margin-left: 200px;
+  border-radius: 50%;
+  background: #ff8;
+}
+.level {
+  left: 50%;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+}
+.l1 {
+  bottom: -1850px;
+  margin-left: -1100px;
+  background: #d0a273;
+}
+.l2 {
+  bottom: -1700px;
+  margin-left: -300px;
+  background: #c4884d;
+}
+.l3 {
+  bottom: -1900px;
+  margin-left: -800px;
+  background: #a66f37;
+}
+.l4 {
+  bottom: -1800px;
+  margin-left: -1700px;
+  background: #80552b;
+}
+.dirt.l5 {
+  bottom: 0px;
+  height:50px;
+  width:100vw;
+  margin-left: 0;
+  background: #3c290c;
+ 
+}
+.l1 .s1 {
+  background: #d0a273;
+}
+.l2 .s2 {
+  background: #c4884d;
+}
+.l3 .s3 {
+  background: #a66f37;
+}
+.l4 .s4 {
+  background: #80552b;
+}
+/*END LANDSCAPE*/
+
+/*Begin Score*/
+
+#score{
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(255,255,255,.5);
+  padding:10px;
+  font-family:sans-serif;
+}
+
+/*End Score*/
+
+
+/*Gopher Style*/
+#dirt{
+  position:fixed;
+  bottom:8px;
+  left:0;
+  width:100%;
+  text-align:center;
+  height:3px;
+  
+}
+
+#dirt div.gopher-hole{
+  display:inline-block;
+  text-align:center;
+  width:80px;
+  border-radius:50%;
+  border-bottom:3px dotted black;
+  margin:0 40px;
+  height:0px;  
+  position:relative;
+  
+}
+
+.gopher-hole img{
+  position:relative;
+  left:0%;
+  bottom:68px;
+
+}
+.gopher-hole img.animate{
+    bottom:-100px;
+}
+
+img#mallet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  z-index:6;
+}
